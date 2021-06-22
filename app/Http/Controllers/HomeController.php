@@ -13,7 +13,7 @@ class HomeController extends Controller
         $dataMovie = Movie::all();
 
 
-        return view('welcome', $dataMovie);
+        return view('home', $dataMovie);
 
     }
 }

@@ -10,6 +10,26 @@
     <title>Laravel-Model-Controller</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="my-container d-flex flex-wrap">
+            @foreach($moviesList as $movie)
+                <div class="card my-card">
+                    <div class="card-body">
+                        <div class="card-title movie-title">
+                            <h5>{{ $movie['title'] }}</h5>
+                        </div>
+                        <div class="card-subtitle">
+                            <h6>{{ $movie['original_title'] }}</h6>
+                        </div>
+                        <div>
+                            <span>Nationality: {{ $movie['nationality'] }}</span> <br>
+                            <span>Release date: {{ $movie['date'] }}</span> <br>
+                            <span>Vote: {{ $movie['vote'] }}</span>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
 </body>
 </html>

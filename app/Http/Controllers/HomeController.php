@@ -12,8 +12,12 @@ class HomeController extends Controller
     {
         $dataMovie = Movie::all();
 
+        $dataView = [
+            'moviesList' => $dataMovie
+        ];
 
-        return view('home', $dataMovie);
+
+        return view('home', $dataView);
 
     }
 }

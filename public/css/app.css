@@ -1,4 +1,16 @@
-body {
-  background-color: antiquewhite;
+.my-container {
+  margin: 0 5px;
+}
+
+.card {
+  width: 25%;
+}
+
+.card .movie-title {
+  padding: 20px 0;
+}
+
+.my-card {
+  margin: 5px;
 }
 
